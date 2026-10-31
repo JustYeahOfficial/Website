@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a0a0c"><title>Yeah :)</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌍%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="top"><a class="brand" href="#" data-view="home">🌍 Yeah :)</a><div class="top-actions"><button id="themeBtn" class="quiet" aria-label="Toggle theme">☼</button><a class="quiet" href="#admin" data-view="admin">Admin</a></div></header>
+<main id="app">
+<section id="home" class="view active">
+<div class="hero"><p class="eyebrow">WELCOME TO MY CORNER OF THE INTERNET</p><h1>Yeah<span> :)</span></h1><p class="sub">A little place for my projects and socials.</p>
+<div class="main-actions"><button data-view="socials">Socials</button><button data-view="projects">Projects</button><button data-view="contact">Contact</button></div></div>
+</section>
+<section id="socials" class="view"><button class="back" data-view="home">← Back</button><h1>Socials</h1><div class="cards"><a class="card discord" href="https://discord.com/users/1511861627794886787" target="_blank" rel="noopener noreferrer"><div class="discord-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="white" d="M19.27 5.33A19.8 19.8 0 0 0 14.4 3.83a.07.07 0 0 0-.08.04c-.21.37-.44.85-.6 1.23a18.3 18.3 0 0 0-5.44 0c-.16-.39-.4-.86-.61-1.23a.08.08 0 0 0-.08-.04 19.7 19.7 0 0 0-4.87 1.5C-.41 9.93-1.26 14.4-.83 18.8a.08.08 0 0 0 .03.05 19.9 19.9 0 0 0 5.97 3.01.08.08 0 0 0 .09-.03c.46-.63.87-1.29 1.22-1.99a.08.08 0 0 0-.04-.1 13.1 13.1 0 0 1-1.87-.9.08.08 0 0 1-.01-.13c.13-.1.25-.2.37-.3a.08.08 0 0 1 .08-.01c3.93 1.8 8.18 1.8 12.06 0a.08.08 0 0 1 .08.01c.12.1.24.2.37.3a.08.08 0 0 1-.01.13c-.6.35-1.22.65-1.87.9a.08.08 0 0 0-.04.1c.36.7.77 1.36 1.22 1.99a.08.08 0 0 0 .09.03 19.8 19.8 0 0 0 5.98-3.01.08.08 0 0 0 .03-.05c.51-5.08-.86-9.5-3.64-13.42a.06.06 0 0 0-.03-.03ZM8.02 15.33c-1.18 0-2.15-1.08-2.15-2.41s.95-2.41 2.15-2.41 2.17 1.09 2.15 2.41c0 1.33-.95 2.41-2.15 2.41Zm7.96 0c-1.18 0-2.15-1.08-2.15-2.41s.95-2.41 2.15-2.41 2.17 1.09 2.15 2.41c0 1.33-.95 2.41-2.15 2.41Z"/></svg></div><b>Discord</b><strong>Add friend on Discord ↗</strong><p>Find me on Discord! Send me a friend request and let's connect.</p></a></div></section>
+<section id="projects" class="view"><button class="back" data-view="home">← Back</button><h1>Projects</h1><p class="muted">Public repositories from JustYeahOfficial.</p><div id="repos" class="repo-grid">Loading projects…</div></section>
+<section id="contact" class="view"><button class="back" data-view="home">← Back</button><h1>Contact</h1><p class="muted">Ask me a question or leave a message. Your name and message will be visible to the site admin.</p><form id="contactForm" class="panel"><input id="contactName" maxlength="60" placeholder="Your name" required><textarea id="contactMessage" maxlength="1000" rows="5" placeholder="Write your question or message…" required></textarea><button>Send Message</button><p id="contactStatus" class="status"></p></form><div class="panel"><h3>Replies from Yeah :)</h3><p class="muted">Replies to messages may appear here for everyone visiting the website.</p><div id="publicReplies">No public replies yet.</div></div></section>
+<section id="admin" class="view"><button class="back" data-view="home">← Back</button><h1>Admin</h1><form id="loginForm" class="panel"><h3>Admin login</h3><input id="adminEmail" type="email" placeholder="Admin email" required><input id="adminPassword" type="password" placeholder="Password" required><button>Sign in</button><p class="status" id="loginStatus"></p></form><div id="adminPanel" hidden><div class="panel row"><h3>Maintenance mode</h3><button id="maintenanceBtn">Toggle</button></div><div class="panel"><h3>Contact messages</h3><div id="messages">Sign in to load messages.</div></div><button id="logoutBtn" class="quiet">Sign out</button></div></section>
+</main><footer>This ‘website’ was made using HTML, CSS, JavaScript, and VSCode.</footer>
+<script type="module" src="./script.js"></script>
+</body></html>
