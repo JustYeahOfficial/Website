@@ -33,7 +33,12 @@ jobs:
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
-
+      - name: Verify production files
+        run: |
+          echo "=== BUILT HTML ==="
+          cat dist/index.html
+          echo "=== BUILT FILES ==="
+          find dist -maxdepth 2 -type f
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
