@@ -1,0 +1,5 @@
+import { SOCIALS } from "@/lib/sample-data";
+import EarthGlobe from "@/components/footer/EarthGlobe";
+export default function SiteFooter() {
+  return <footer className="relative border-t border-border/60"><div className="mx-auto max-w-6xl px-6 py-16 sm:py-20"><div className="flex flex-col items-center gap-10 md:flex-row md:items-end md:justify-between"><p className="self-start font-display text-[clamp(3rem,11vw,7rem)] font-bold leading-[0.85] tracking-tight text-foreground md:self-auto">Yeah<span className="text-primary"> :)</span></p><EarthGlobe /><div className="flex flex-wrap justify-center gap-x-6 gap-y-2 md:justify-end">{SOCIALS.map((social) => <a key={social.key} href={social.url} target="_blank" rel="noopener noreferrer" className="font-mono text-[0.7rem] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-primary">{social.platform}</a>)}</div></div><div className="hairline mt-12" /><p className="mt-6 text-center font-mono text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground/70">© 2026 @Just_Yeah_Official · built in the open</p></div></footer>;
+}
